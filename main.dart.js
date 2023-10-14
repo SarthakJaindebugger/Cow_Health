@@ -26087,13 +26087,17 @@ _.a=a
 _.b=b
 _.c=0
 _.e=_.d=null},
-tx:function tx(a,b,c){this.c=a
-this.d=b
-this.a=c},
+tx:function tx(a,b,c,d){var _=this
+_.c=a
+_.d=b
+_.e=c
+_.a=d},
 a8G:function a8G(a){this.a=a},
-BC:function BC(a,b,c){this.c=a
-this.d=b
-this.a=c},
+BC:function BC(a,b,c,d){var _=this
+_.c=a
+_.d=b
+_.e=c
+_.a=d},
 WB:function WB(a,b,c){var _=this
 _.d=a
 _.e=b
@@ -26224,8 +26228,9 @@ _.a=a
 _.b=b
 _.c=c
 _.d=d},
-ao3:function ao3(a,b){this.a=a
-this.b=b},
+ao3:function ao3(a,b,c){this.a=a
+this.b=b
+this.c=c},
 h4:function h4(a,b,c){this.a=a
 this.b=b
 this.c=c},
@@ -87320,7 +87325,7 @@ else if(d<0)A.L(A.eA("Start may not be negative, was "+d+"."))
 throw A.c(new A.OZ(m,b,new A.Dm(o,d,n)))}}
 A.tx.prototype={
 I(a){var s=null,r=A.HC(A.hU(!1,!0,A.hl(B.cy,s,s),s,!0,s,s,s,s,s,s,s,s,s,s,s,new A.a8G(a),s,s,s,s,s,s),A.aT(" ",s,s,s,s,s,s,s)),q=A.ih(20)
-return A.AL(r,A.fE(A.ck(s,A.ast(A.cV(A.a([A.bA(s,20,s),A.bA(s,30,s),new A.bx(new A.au(30,30,30,30),new A.BC(this.d,this.c,s),s)],t.p),B.J,B.eh,B.A),s,8,new A.au(20,20,20,20),new A.co(q,B.n)),B.l,s,s,s,s,400,s,s,s,s,500),s,s),s,s)}}
+return A.AL(r,A.fE(A.ck(s,A.ast(A.cV(A.a([A.bA(s,20,s),A.bA(s,30,s),new A.bx(new A.au(30,30,30,30),new A.BC(this.d,this.c,this.e,s),s)],t.p),B.J,B.eh,B.A),s,8,new A.au(20,20,20,20),new A.co(q,B.n)),B.l,s,s,s,s,400,s,s,s,s,500),s,s),s,s)}}
 A.a8G.prototype={
 $0(){A.em(this.a,!1).kc(null)},
 $S:0}
@@ -87388,7 +87393,7 @@ ahp(a,b){var s=0,r=A.T(t.j),q,p=this,o,n,m
 var $async$yP=A.U(function(c,d){if(c===1)return A.Q(d,r)
 while(true)switch(s){case 0:A.c6(p.a.c)
 s=3
-return A.W(A.auM(A.aNx("https","iwkdqlzs8c.execute-api.us-east-1.amazonaws.com","/gateway_prediction",A.ay(["startTime",B.e.k(a),"endTime",B.e.k(b),"nodeId",p.a.c],t.N,t.z))),$async$yP)
+return A.W(A.auM(A.aNx("https","iwkdqlzs8c.execute-api.us-east-1.amazonaws.com","/"+p.a.e,A.ay(["startTime",B.e.k(a),"endTime",B.e.k(b),"nodeId",p.a.c],t.N,t.z))),$async$yP)
 case 3:o=d
 n=o.b
 if(n===200){q=B.aH.cf(0,A.kv(A.ks(o.e).c.a.h(0,"charset")).cf(0,o.w))
@@ -87863,7 +87868,7 @@ return A.az(new A.af(s,new A.ao_(this,a),r),!0,r.i("bp.E"))},
 Sk(a,b){var s=this,r=A.dz(b,null)+100,q=s.r,p=q.h(0,B.e.k(r))==="0"?B.cj:B.tg,o=A.ih(12),n=J.aF(s.a.d.a,"click_here"),m=J.aF(s.a.d.a,"cow_id")
 q.h(0,B.e.k(r))
 return A.ast(A.cV(A.a([new A.Js(b,"assets/images/tarantarancow1.jpeg",n,m,new A.ao0(s,b,a,r),null)],t.p),B.J,B.v,B.A),p,3.5,null,new A.co(o,B.n))},
-anp(a,b,c){var s=A.zf(new A.ao3(b,c),null,t.z)
+anp(a,b,c,d){var s=A.zf(new A.ao3(b,c,d),null,t.z)
 A.em(a,!1).jq(s)}}
 A.ao2.prototype={
 $0(){this.a.d=J.f9(this.b,t.S)},
@@ -87885,13 +87890,15 @@ p.toString
 return A.ck(s,r.Sk(p,q),B.l,s,s,s,s,s,s,new A.au(8,8,8,8),s,s,this.b)},
 $S:530}
 A.ao0.prototype={
-$0(){var s,r=this
-A.c6("Clicked on Node ID: "+r.b)
-s=r.a
-s.anp(r.c,B.e.k(r.d),s.a.d)},
+$0(){var s,r,q,p=this
+A.c6("Clicked on Node ID: "+p.b)
+s=p.a
+r=B.e.k(p.d)
+q=s.a
+s.anp(p.c,r,q.d,q.c)},
 $S:0}
 A.ao3.prototype={
-$1(a){return new A.tx(this.b,this.a,null)},
+$1(a){return new A.tx(this.b,this.a,this.c,null)},
 $S:531}
 A.h4.prototype={}
 A.rA.prototype={
