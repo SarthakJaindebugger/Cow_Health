@@ -4,8 +4,8 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
 const RESOURCES = {"version.json": "80b8084792063c2ae8c4220a3dd782dc",
-"index.html": "f3720a3c443e228860d0662d70c15d47",
-"/": "f3720a3c443e228860d0662d70c15d47",
+"index.html": "e352d04a65c01443f7d175cf138c9ace",
+"/": "e352d04a65c01443f7d175cf138c9ace",
 "main.dart.js": "a9b59f1d0d0fa98aa36891731bf4fbf2",
 "flutter.js": "6fef97aeca90b426343ba6c5c9dc5d4a",
 "favicon.png": "7ac4a67caf59d13ad901313d78d86e7d",
@@ -74,7 +74,6 @@ const RESOURCES = {"version.json": "80b8084792063c2ae8c4220a3dd782dc",
 "assets/assets/images/awadh_logo_only.jpeg": "e0398ebc6696db87de1cd3cf06e278dc",
 "assets/assets/images/mooofarmlogo.png": "7ac4a67caf59d13ad901313d78d86e7d",
 "assets/assets/images/awadh_fam.jpeg": "01837cbf9851dd808c98e223897de70f",
-"assets/assets/images/Screenshot%25202023-07-17%2520at%25203.58.22%2520PM.png": "3e1f0f88b6a33e9cc7828ebd868c5ef5",
 "assets/assets/images/nuclear-applications.jpeg": "d1069d66d12674267b8b351a32fafb5f",
 "assets/assets/images/science_tech_logo.png": "296486d162cc230c3c84832635fc11b0",
 "assets/assets/images/cow_banner1.jpeg": "57803bd7699b9c2fa5570ca5c0c47ac5",
